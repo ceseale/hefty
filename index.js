@@ -62,14 +62,86 @@
 
 	"use strict";
 
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
 	Object.defineProperty(exports, "__esModule", {
 	  value: true
 	});
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-	var LinkedList = exports.LinkedList = function LinkedList() {
-	  _classCallCheck(this, LinkedList);
+	var LinkedList = exports.LinkedList = (function () {
+	  function LinkedList() {
+	    _classCallCheck(this, LinkedList);
+
+	    this.head = null;
+	    this.tail = null;
+	  }
+
+	  _createClass(LinkedList, [{
+	    key: "add",
+	    value: function add() {}
+	  }, {
+	    key: "remove",
+	    value: function remove() {}
+	  }, {
+	    key: "getHead",
+	    value: function getHead() {}
+	  }, {
+	    key: "getTail",
+	    value: function getTail() {}
+	  }, {
+	    key: "reverse",
+	    value: function reverse() {}
+	  }, {
+	    key: "removeHead",
+	    value: function removeHead() {}
+	  }, {
+	    key: "removeTail",
+	    value: function removeTail() {}
+	  }, {
+	    key: "removeDuplicates",
+	    value: function removeDuplicates() {}
+	  }, {
+	    key: "clear",
+	    value: function clear() {}
+	  }, {
+	    key: "filter",
+	    value: function filter() {}
+	  }, {
+	    key: "some",
+	    value: function some() {}
+	  }, {
+	    key: "map",
+	    value: function map() {}
+	  }, {
+	    key: "reduce",
+	    value: function reduce() {}
+	  }, {
+	    key: "forEach",
+	    value: function forEach() {}
+	  }, {
+	    key: "every",
+	    value: function every() {}
+	  }, {
+	    key: "equals",
+	    value: function equals() {}
+	  }, {
+	    key: "size",
+	    value: function size() {}
+	  }, {
+	    key: "toArray",
+	    value: function toArray() {}
+	  }, {
+	    key: "contains",
+	    value: function contains() {}
+	  }]);
+
+	  return LinkedList;
+	})();
+
+	var Node = function Node(val) {
+	  return { val: val, next: null };
 	};
 
 /***/ }
