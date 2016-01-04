@@ -4,8 +4,8 @@
   "description": "A Node.js data structures library",
   "main": "index.js",
   "scripts": {
-    "compile":"webpack -w",
-    "test": "npm run compile && mocha --compilers js:mocha-babel src/tests/**/*.js"
+    "compile": "webpack",
+    "test": "npm run compile && mocha src/tests/**/*.js --compilers js:babel-core/register"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,7 @@
     "chai": "^3.4.1",
     "mocha": "^2.3.4",
     "mocha-babel": "^3.0.0",
+    "watch": "^0.17.1",
     "webpack": "^1.12.9"
   }
 }

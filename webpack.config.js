@@ -13,11 +13,6 @@ module.exports = {
         test: /\.jsx?$/,
         exclude: /(node_modules|bower_components)/,
         loader: 'babel',
-        query: {
-          // https://github.com/babel/babel-loader#options
-          presets: ['es2015'],
-          plugins: ["syntax-class-properties"]
-        }
       }
     ]
   }
